@@ -1,0 +1,72 @@
+/* 
+header_1-1
+左上にロゴ、右にナビゲーション
+左上ロゴ/右にナビゲーション,SPは縮小で横並び表示(PCの並びと同等)
+*/
+.header_wrapper{
+  width: 100%;
+  background-color: beige;
+
+}
+.header_wrapp{
+  display: flex;
+}
+.logo_wrapp{
+  width: 20%;
+}
+.logo_wrapp img {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  padding: 1rem 0;
+}
+.nav_wrapper{
+  width: 80%;
+  
+}
+.nav__wrapp{
+  display: flex;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+.nav_item{
+  padding: 1rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li{
+  list-style: none;
+}
+li :hover{
+  list-style: none;
+  color: rgb(255, 0, 140);
+}
+
+@media screen and (max-width: 480px) {
+  .logo_wrapp{
+    width: 30%;
+  }
+  .logo_wrapp img {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 1rem 1rem;
+  }
+  .nav_wrapper{
+    width: 70%;
+    
+  }
+	.nav__wrapp{
+    display: flex;
+    position: absolute;
+    right: 0.5rem;
+    top: 1rem;
+  }
+  .nav_item{
+    padding: 0.5rem;
+    font-size: 0.5rem;
+  }
+}
